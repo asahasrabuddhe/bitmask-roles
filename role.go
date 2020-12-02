@@ -25,3 +25,8 @@ const (
 func NewRole(role role) Role {
 	return &role
 }
+
+func NewRoleFromInt64(r int64) Role {
+	rle := role(r)
+	return &rle
+}
